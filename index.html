@@ -71,6 +71,10 @@ textarea{
     if(people2 == ""){alert("여자를 입력해주세요."); return 0;}
     people = people.split(" ")
     people2 = people2.split(" ")
+    if((people + people2).includes("고예찬")){
+      alert("이게 어디서")
+      location.reload()
+    }
     p1 = people[Math.floor(Math.random() * people.length)];
     p2 = people2[Math.floor(Math.random() * people2.length)];
     if(p1 === p2){
@@ -84,7 +88,7 @@ textarea{
     people = document.getElementById("people").value;
     people2 = document.getElementById("people2").value;
     document.getElementById("people").value = "김시혁 김우용 김정우 송주원 오현민 윤승재 이선우 이준혁 정지오 정하람 조원우 황건우 이서준 김유담"
-    document.getElementById("people2").value = "강지민 김서율 김아현 김지인 노강은 설채원 송지윤 이효린 장민서 한지유 황수정"
+    document.getElementById("people2").value = "강지민 김서율 김아현 김지인 노강은 설채원 송지윤 이효린 장민서 한지유 황수정 문지원"
   }
   function theme(){
     if(themes == 0){
