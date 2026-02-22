@@ -77,19 +77,8 @@ textarea{
       start();
     }
     else{
-      display.textContent = `${p1} ♡ ${p2}`
-      /*
-      display.style.color = "yellow"
-      for(i=0;i<50;i++){
-        display.style.color = "yellow"
-        setTimeout(function(){
-          p1 = people[Math.floor(Math.random() * people.length)];
-          p2 = people2[Math.floor(Math.random() * people2.length)];
-          display.textContent = `${p1} ${p2}`
-        },20 * i)
-      }
-      display.style.color = "inherit"
-    }*/
+      display.textContent = `${p1} ${p2}`
+    }
   }
   function reset(){
     people = document.getElementById("people").value;
