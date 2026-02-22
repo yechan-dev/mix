@@ -71,10 +71,11 @@ textarea{
     if(people2 == ""){alert("여자를 입력해주세요."); return 0;}
     people = people.split(" ")
     people2 = people2.split(" ")
+    /*
     if((people + people2).includes("고예찬")){
       alert("이게 어디서")
       location.reload()
-    }
+    }*/
     p1 = people[Math.floor(Math.random() * people.length)];
     p2 = people2[Math.floor(Math.random() * people2.length)];
     if(p1 === p2){
